@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Wellbud</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', sans-serif;
+            background: #ffffff;
+            color: #1d1d1f;
+            line-height: 1.5;
+        }
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #f5f5f7;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #d2d2d7;
+        }
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 5vh;
+        }
+        .nav-logo {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1d1d1f;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 28px;
+        }
+        .nav-links a {
+            font-size: 0.75rem;
+            color: #1d1d1f;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+        .nav-links a:hover,
+        .nav-links a.active {
+            opacity: 1;
+        }
+
+        /* Page Header */
+        .page-header {
+            text-align: center;
+            padding: 60px 0;
+            background: #000000;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            min-height: 200px;
+        }
+        .page-header .container {
+            width: 100%;
+        }
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+        .page-header p {
+            font-size: 1.2rem;
+            color: #86868b;
+        }
+
+        /* Content Section */
+        .content-section {
+            padding: 60px 0;
+        }
+        .content-section + .content-section {
+            border-top: 1px solid #d2d2d7;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        .section-subtitle {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            margin-top: 24px;
+        }
+        .section-subtitle:first-of-type {
+            margin-top: 0;
+        }
+        .content-text {
+            font-size: 0.95rem;
+            color: #86868b;
+            margin-bottom: 8px;
+        }
+        .content-quote {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #1d1d1f;
+            border-left: 3px solid #000000;
+            padding-left: 16px;
+            margin: 24px 0;
+        }
+
+        /* Two-Track */
+        .track-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 24px;
+        }
+        @media (max-width: 600px) {
+            .track-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .track-card {
+            background: #f5f5f7;
+            border-radius: 18px;
+            padding: 32px;
+        }
+        .track-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .track-card p {
+            font-size: 0.85rem;
+            color: #86868b;
+            margin-bottom: 4px;
+        }
+        .touch-card {
+            background: #000000;
+            color: #ffffff;
+            border-radius: 18px;
+            padding: 32px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .touch-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .touch-card p {
+            font-size: 0.95rem;
+            color: #86868b;
+        }
+
+        /* Contact */
+        .contact-section {
+            padding: 60px 0;
+            text-align: center;
+            border-top: 1px solid #d2d2d7;
+        }
+        .contact-section p {
+            font-size: 0.95rem;
+            color: #86868b;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px 0;
+            background: #f5f5f7;
+            border-top: 1px solid #d2d2d7;
+        }
+        .footer-content {
+            font-size: 0.75rem;
+            color: #86868b;
+        }
+        .footer-links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+        }
+        .footer-links a {
+            color: #86868b;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .footer-links a:hover {
+            color: #1d1d1f;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container nav-content">
+            <a href="index.html" class="nav-logo">Wellbud</a>
+            <div class="nav-links">
+                <a href="smarter.html">Smarter</a>
+                <a href="better.html">Better</a>
+                <a href="about.html" class="active">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>About</h1>
+            <p>운동전문가를 위한 스마트 파트너</p>
+        </div>
+    </section>
+
+    <!-- 문제 인식 -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">문제 인식</h2>
+            <h3 class="section-subtitle">운동전문가의 현실</h3>
+            <p class="content-text">누구보다 성실하고 전문성에 대한 갈증이 큰 사람들.</p>
+            <p class="content-text">하지만 수십 명의 데이터 정리와 반복적 행정 업무에 치이고,</p>
+            <p class="content-text">자신을 돌보고 실력을 키울 시간이 없습니다.</p>
+            <p class="content-text" style="color: #1d1d1f; font-weight: 500; margin-top: 16px;">전문가로 시작했지만, 구조적 문제로 성장이 멈추는 현실.</p>
+
+            <h3 class="section-subtitle" style="margin-top: 32px;">회원의 현실</h3>
+            <p class="content-text">PT/필라테스 세션당 8~15만원의 비용을 지불하지만,</p>
+            <p class="content-text">"내가 지불한 비용만큼 정교하고 특별하게 관리받고 있는가?"</p>
+            <p class="content-text">몸의 변화가 데이터로 증명되지 않을 때 느끼는 불안.</p>
+        </div>
+    </section>
+
+    <!-- 핵심 철학 -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">핵심 철학</h2>
+            <p class="content-quote">기술이 일궈낸 자리에 전문가의 진심이 채워질 때, 진정한 웰니스가 시작됩니다.</p>
+
+            <h3 class="section-subtitle">진정성은 설계할 수 없다</h3>
+            <p class="content-text">Touch(진심)는 인위적인 기능이 아니라, 압도적인 관리와 본질에 집중한 지도가 만났을 때 자연스럽게 발생하는 '고귀한 부산물'입니다.</p>
+
+            <h3 class="section-subtitle">기술은 대체가 아닌 날개</h3>
+            <p class="content-text">AI로 행정 업무를 제로화하여 운동전문가에게 '시간'을 벌어주고, 그 여유가 회원을 향한 '진심'과 '양질의 지도'로 치환됩니다.</p>
+
+            <h3 class="section-subtitle">대체 불가능한 존재</h3>
+            <p class="content-text">나에게 최적화된 관리를 지속하는 운동전문가를 '대체 불가능한 파트너'로 만드는 것이 목표입니다.</p>
+        </div>
+    </section>
+
+    <!-- Two-Track -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Two-Track</h2>
+            <div class="track-grid">
+                <div class="track-card">
+                    <h3>Smarter</h3>
+                    <p>운동전문가를 위한 AI</p>
+                    <p>압도적 관리가 곧 진심의 증명이다.</p>
+                </div>
+                <div class="track-card">
+                    <h3>Better</h3>
+                    <p>본질을 위한 성장</p>
+                    <p>확보된 시간은 전문가의 성장을 위해 재투자된다.</p>
+                </div>
+            </div>
+            <div class="touch-card">
+                <h3>Human Touch</h3>
+                <p>기술이 데이터를 증명하고, 사람이 그 여백을 진심으로 채운다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p>문의: contact@wellbud.co.kr</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#">개인정보 처리방침</a>
+                    <span>|</span>
+                    <a href="#">이용약관</a>
+                    <span>|</span>
+                    <a href="#">Contact</a>
+                </div>
+                <p>Copyright © 2026 Wellbud. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

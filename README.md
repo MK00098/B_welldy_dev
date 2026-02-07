@@ -25,6 +25,7 @@ Wellbud
 | `smarter.html` | Smarter 허브 |
 | `coaching-log.html` | 운동일지 AI |
 | `better.html` | Better 허브 |
+| `about.html` | About (서비스 소개) |
 | `docs/서비스 개요.md` | 서비스 철학 및 구조 |
 
 ## 배포
