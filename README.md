@@ -1,4 +1,4 @@
-# Wellbud (웰벗)
+# CoachMate (코치메이트)
 
 운동전문가를 위한 스마트 파트너
 
@@ -7,7 +7,7 @@
 ## 구조
 
 ```
-Wellbud
+CoachMate
 ├── Smarter (운동전문가를 위한 AI)
 │   ├── 운동일지 AI
 │   └── 식단관리 AI (준비 중)
